@@ -1,0 +1,21 @@
+.card{
+    width:100%;
+    min-height:50%;
+}
+
+.Add_btn{
+    border-radius: 44px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 25px;
+    text-decoration: none;
+    border:1px solid #3498db;
+    background-image: linear-gradient(to right top, #051937, #47255a, #912462, #ce314b, #eb6712);
+    
+}
+
+.Add_btn:hover{
+    background-image: linear-gradient(to right top, #37052a, #4f1250, #5d277e, #5842b2, #1261eb);
+    
+}
