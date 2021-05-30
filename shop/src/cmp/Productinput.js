@@ -75,7 +75,7 @@ function Productinput({handleLogout})
                 alert("less");
             }
         }
-        const AddCard=(e,c)=>
+        const AddCard=(e)=>
         {
             const i=e.target.value;
             const newRecord={ ...records[i],id:new Date().getTime.toString()}
@@ -84,8 +84,8 @@ function Productinput({handleLogout})
             console.log(c);
         }
         const deleted = (name) => {
-            console.log(name);
-            setCardList(cardList.filter(item => item.ProductName !== name))
+            //console.log(name);
+            setCardList(cardList.filter(item => item.name !== name))
         }
        
         
@@ -150,7 +150,7 @@ function Productinput({handleLogout})
                                                 <span><button type="button" class="btn ">{count}</button></span>
                                                 <span><button type="button" onClick={()=>{Sub()}} class="btn btn-primary">−</button></span>
                                                 <br></br>
-                                                <button variant="denger" onClick={event=>AddCard(event,c)} value={index}>Add Card</button>
+                                                <button variant="denger" onClick={event=>AddCard(event)} value={index}>Add Card</button>
                                                 
                                             </div>
                                         </div>
@@ -195,7 +195,7 @@ function Productinput({handleLogout})
                                             <td>{inputval.Price}</td>
                                             <td>{count}</td>
                                             <td>{c*inputval.Price}</td>
-                                            <button type="button" className="btn btn-danger"onClick={()=>deleted(inputval.ProductName,)} value={index}>Delete</button>
+                                            <button type="button" className="btn btn-danger"onClick={()=>deleted(inputval.name)} value={index}>Delete</button>
                                             
                                         
                                            </tr>
