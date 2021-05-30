@@ -80,7 +80,7 @@ function Productinput({handleLogout})
             const i=e.target.value;
             const newRecord={ ...records[i],id:new Date().getTime.toString()}
             setCardList([...cardList,newRecord])
-            setC(count)
+            setC(count);
             console.log(c);
         }
         const deleted = (name) => {
